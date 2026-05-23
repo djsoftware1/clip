@@ -61,7 +61,7 @@ int main(int argc, char** argv) {
     }
 
     std::cerr << "usage:\n"
-              << "  clip            copy stdin to clipboard\n"
-              << "  clip -p         paste clipboard to stdout\n";
+              << "  clipx            copy stdin to clipboard\n"
+              << "  clipx -p         paste clipboard to stdout\n";
     return 1;
 }
