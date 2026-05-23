@@ -24,7 +24,7 @@ static int copy_stdin() {
     if (run_command("which xsel > /dev/null 2>&1") == 0)
         return run_command("xsel --clipboard --input");
 
-    std::cerr << "clip: no clipboard backend found (wl-copy, xclip, xsel)\n";
+    std::cerr << "clipx: no clipboard backend found (wl-copy, xclip, xsel)\n";
     return 1;
 #endif
 }
@@ -42,7 +42,7 @@ static int paste_stdout() {
     if (run_command("which xsel > /dev/null 2>&1") == 0)
         return run_command("xsel --clipboard --output");
 
-    std::cerr << "clip: no clipboard backend found (wl-paste, xclip, xsel)\n";
+    std::cerr << "clipx: no clipboard backend found (wl-paste, xclip, xsel)\n";
     return 1;
 #endif
 }
